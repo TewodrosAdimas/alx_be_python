@@ -14,4 +14,4 @@ else:
         
         reminder = "is a low priority task. Consider completing it when you have free time."
 
-print(f"\'{task}\' is {reminder}")
+print(f"Note: \'{task}\' is {reminder}")
