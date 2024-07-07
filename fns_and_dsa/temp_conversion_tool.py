@@ -10,11 +10,15 @@ def convert_to_fahrenheit(celsius):
     print(f"{celsius}°C is {fahrenheit:.2f}°F")
 
 temp = float(input("Enter the temperature to convert: "))
-choose = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").lower()
+if type(temp) == 'float':
 
-if choose == "f":
-    convert_to_celsius(temp)
-elif choose == "c":
-    convert_to_fahrenheit(temp)
+    choose = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").lower()
+
+    if choose == "f":
+        convert_to_celsius(temp)
+    elif choose == "c":
+        convert_to_fahrenheit(temp)
+    else:
+        print("Invalid input. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
 else:
-    print("Invalid input. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
+    print("Invalid temperature. Please enter a numeric value.")
