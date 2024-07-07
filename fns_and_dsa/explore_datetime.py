@@ -9,5 +9,5 @@ from datetime import *
 #     future_date = add 
 #     print("Future date:", future_date)  #YYYY-MM-DD
 
-x = time()
+x = date(2024, 5, 21)
 print(x)
