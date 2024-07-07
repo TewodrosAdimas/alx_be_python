@@ -16,7 +16,7 @@ def main():
             shopping_list.append(item)
             
         elif choice == '2':
-            item = input("Enter item to be removed: ")
+            item = input("\"Enter item to be removed: \"")
             if item in shopping_list:
                 shopping_list.remove(item)
             else:
